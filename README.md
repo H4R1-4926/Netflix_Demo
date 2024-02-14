@@ -1,3 +1,3 @@
-# newtflix_dupli
+# Netflix Demo
 
-A new Flutter project.
+Netflix UI and API integration

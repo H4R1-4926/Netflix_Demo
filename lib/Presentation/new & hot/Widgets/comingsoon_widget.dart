@@ -66,7 +66,7 @@ class ComingsoonWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        width: 180,
+                        width: 150,
                         height: 50,
                         child: Text(
                           upc.title ?? 'No Title',
@@ -86,16 +86,20 @@ class ComingsoonWidget extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Iconwid(
-                                  title: 'Remaind me',
-                                  fronticon: (Icons.notifications_none),
-                                  iconsize: 20,
-                                  textsize: 12),
-                              Iconwid(
-                                  title: 'info',
-                                  fronticon: (Icons.info_outline),
-                                  iconsize: 20,
-                                  textsize: 12)
+                              Flexible(
+                                child: Iconwid(
+                                    title: 'Remaind me',
+                                    fronticon: (Icons.notifications_none),
+                                    iconsize: 20,
+                                    textsize: 12),
+                              ),
+                              Flexible(
+                                child: Iconwid(
+                                    title: 'info',
+                                    fronticon: (Icons.info_outline),
+                                    iconsize: 20,
+                                    textsize: 12),
+                              )
                             ],
                           ),
                         ),
